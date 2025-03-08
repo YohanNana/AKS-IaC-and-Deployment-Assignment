@@ -9,6 +9,16 @@ resource "azurerm_resource_group" "aks_rg" {
   location = "East US"
 }
 
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "terraform-storage-rg"
+    storage_account_name = "mytfstatestorage162002"
+    container_name       = "tfstate-container"
+    key                  = "terraform.tfstate"
+    subscription_id      = "ea2c7698-2a1b-4222-a1ea-14426313606d"
+  }
+}
+
 resource "azurerm_kubernetes_cluster" "aks" {
   name                = "myAKSCluster"
   location            = azurerm_resource_group.aks_rg.location
