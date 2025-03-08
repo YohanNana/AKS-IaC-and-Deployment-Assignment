@@ -69,7 +69,6 @@ docker build -t my-node-app .
 
 ### Tag the Image
 
-For Docker Hub:
 
 ```sh
 docker tag my-node-app <your-dockerhub-username>/my-node-app:v1
@@ -78,7 +77,6 @@ docker tag my-node-app <your-dockerhub-username>/my-node-app:v1
 
 ### Push the Image
 
-For Docker Hub:
 
 ```sh
 docker push <your-dockerhub-username>/my-node-app:v1
@@ -171,8 +169,4 @@ However, after implementing a **state-locking mechanism** for the Terraform conf
 
 
 
-## Conclusion
-
-This project successfully demonstrates how to: Provision an **AKS Cluster** using Terraform.  Build & push a **custom Node.js Docker container**. Deploy and expose the app on **Azure Kubernetes Service**.  Test and validate deployment via **cURL & browser**.
-
-
+## Thank You!
