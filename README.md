@@ -16,6 +16,7 @@ Before running the project, ensure you have the following installed:
 - kubectl
 - Git
 - An **Azure account** with access to create an AKS cluster.
+- Make sure to add azure subscription-id to the correct places in terrafrom file
 
 ---
 
