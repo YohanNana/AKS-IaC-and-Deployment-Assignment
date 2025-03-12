@@ -140,6 +140,7 @@ To delete the AKS cluster and free resources, run:
 
 ```sh
 terraform destroy -auto-approve
+az group delete --name myAKSResourceGroup --yes
 ```
 
 ---

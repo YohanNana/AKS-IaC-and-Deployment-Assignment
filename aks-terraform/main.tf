@@ -1,7 +1,7 @@
 provider "azurerm" {
   features {}
 
-  subscription_id = "ea2c7698-2a1b-4222-a1ea-14426313606d"
+  subscription_id = "your-subscription-id"
 }
 
 resource "azurerm_resource_group" "aks_rg" {
@@ -12,10 +12,10 @@ resource "azurerm_resource_group" "aks_rg" {
 terraform {
   backend "azurerm" {
     resource_group_name  = "terraform-storage-rg"
-    storage_account_name = "mytfstatestorage162002"
+    storage_account_name = "your-storage-account"
     container_name       = "tfstate-container"
     key                  = "terraform.tfstate"
-    subscription_id      = "ea2c7698-2a1b-4222-a1ea-14426313606d"
+    subscription_id      = "your-subscription-id"
   }
 }
 
